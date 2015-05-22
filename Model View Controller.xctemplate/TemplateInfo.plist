@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Description</key>
+	<string>Model View Controller Template.</string>
+	<key>Kind</key>
+	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Description</key>
+			<string>Description of how to use template</string>
+			<key>Identifier</key>
+			<string>productDescription</string>
+			<key>Name</key>
+			<string>Enter ONLY Screen Name:</string>
+			<key>Type</key>
+			<string>static</string>
+			<key>Default</key>
+			<string>e.g. AccountInfo (without ViewController)</string>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>The name of the class to create</string>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Name</key>
+			<string>Screen:</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>factory</string>
+			<key>Type</key>
+			<string>static</string>
+			<key>Default</key>
+			<string>___VARIABLE_productName:identifier___Factory</string>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>model</string>
+			<key>Type</key>
+			<string>static</string>
+			<key>Default</key>
+			<string>___VARIABLE_productName:identifier___Model</string>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>view</string>
+			<key>Type</key>
+			<string>static</string>
+			<key>Default</key>
+			<string>___VARIABLE_productName:identifier___View</string>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>viewDelegate</string>
+			<key>Type</key>
+			<string>static</string>
+			<key>Default</key>
+			<string>___VARIABLE_view:identifier___Delegate</string>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>viewDataSource</string>
+			<key>Type</key>
+			<string>static</string>
+			<key>Default</key>
+			<string>___VARIABLE_view:identifier___DataSource</string>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>viewController</string>
+			<key>Type</key>
+			<string>static</string>
+			<key>Default</key>
+			<string>___VARIABLE_productName:identifier___ViewController</string>
+		</dict>
+	</array>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+	</array>
+	<key>SortOrder</key>
+	<string>8</string>
+	<key>Summary</key>
+	<string>A Cocoa Touch class</string>
+</dict>
+</plist>
