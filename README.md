@@ -21,4 +21,4 @@ When creating New File, you'll see 'Model View Controller' template option.
 It will ask you to enter simply name of the screen you want to create, e.g AccountInfo, without any ViewController suffixes etc.
 As a result you'll get Factory, Model, View, Controller and Xib files.
 
-[mvc](img/mvc.png)
+![mvc](img/mvc.png)
