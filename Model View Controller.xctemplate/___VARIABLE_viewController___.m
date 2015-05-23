@@ -17,7 +17,6 @@
 
 @end
 
-
 @implementation ___VARIABLE_viewController:identifier___
 
 @dynamic view;
@@ -25,7 +24,7 @@
 #pragma mark - Initialization
 
 - (instancetype)initWithModel:(___VARIABLE_model:identifier___ *)aModel {
-    self = [super initWithNibName:@"___VARIABLE_viewController:identifier___" bundle:nil];
+    self = [super initWithNibName:[NSStringFromClass([self class])] bundle:nil];
     if (self) {
         self.model = aModel;
     }

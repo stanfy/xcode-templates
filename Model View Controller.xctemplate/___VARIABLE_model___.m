@@ -12,7 +12,6 @@
 
 @end
 
-
 @implementation ___VARIABLE_model:identifier___
 
 @end

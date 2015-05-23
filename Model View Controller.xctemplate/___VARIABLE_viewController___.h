@@ -10,7 +10,6 @@
 
 @class ___VARIABLE_model:identifier___;
 
-
 @interface ___VARIABLE_viewController:identifier___ : UIViewController
 
 - (instancetype)initWithModel:(___VARIABLE_model:identifier___ *)model;

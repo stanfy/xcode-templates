@@ -12,7 +12,6 @@
 
 @end
 
-
 @implementation ___VARIABLE_view:identifier___
 
 - (void)awakeFromNib {

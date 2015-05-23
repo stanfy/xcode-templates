@@ -14,7 +14,6 @@
 
 @end
 
-
 @implementation ___VARIABLE_factory:identifier___
 
 - (UIViewController *)newController {
