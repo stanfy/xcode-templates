@@ -24,7 +24,7 @@
 #pragma mark - Initialization
 
 - (instancetype)initWithModel:(___VARIABLE_model:identifier___ *)aModel {
-    self = [super initWithNibName:[NSStringFromClass([self class])] bundle:nil];
+    self = [super initWithNibName:NSStringFromClass([self class]) bundle:nil];
     if (self) {
         self.model = aModel;
     }
