@@ -1,26 +1,37 @@
 CURRENT_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 cd $CURRENT_DIR
 
-DESTINATION_DIR="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Templates/File Templates/Source/"
-TARGET_DIR="Model View Controller.xctemplate"
-sudo cp -r "$TARGET_DIR" "$DESTINATION_DIR"
+DESTINATION_DIR=~/Library/Developer/Xcode/Templates/File\ Templates/
+mkdir -p "$DESTINATION_DIR"
 
+for d in *.xctemplate ; do
+   if [ -d "$DESTINATION_DIR/$d" ]
+   then
+      rm -r "$DESTINATION_DIR/$d"
+   fi
+   cp -rf "$d" "$DESTINATION_DIR"
+done
 
 GREEN='\033[0;32m'
 RED='\033[0;31m'
 YELLOW='\033[1;33m'
 NC='\033[0m'
 
-if [ -d "$DESTINATION_DIR$TARGET_DIR" ]; then
-   printf ${GREEN} 
-   printf "****************************************************************\n"
-   printf "*                                                              *\n"
-   printf "*   'Model View Controller Template' Successfully installed!   *\n"
-   printf "*                                                              *\n"
-   printf "****************************************************************\n"
-   printf ${NC}
-else
-   printf "${RED}Error installing 'Model View Controller Template'.\n"
-   printf "${YELLOW}Try to put it manually into this directory: ${NC}"$DESTINATION_DIR
-   printf "\n"
-fi
+for d in *.xctemplate ; do
+   if [ "$(ls -A "$DESTINATION_DIR/$d")" ]
+   then
+      printf "${GREEN}+ '$d' Successfully Installed!\n${NC}"
+   else
+      printf "${RED}- '$d' Couldn’t be installed.\n"
+      printf "${YELLOW}   Try to put it manually into this directory: ${NC}$DESTINATION_DIR"
+      printf "\n"
+   fi
+done
+
+
+
+
+
+
+
+
