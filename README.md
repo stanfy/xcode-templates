@@ -25,7 +25,7 @@ As a result you'll get Factory, Model, View, Controller and Xib files.
 ###MVVM
 
 * **Model** (Prefered Object instead of Struct) – is **BLL** that provides neede data that can be used to be shown and has nothing to do with UI at all
-* **View** *(UIViewController)* (Can be additionally split into UIView if needed). A **View** can have its **own ViewModel**, or it can inherit its **parent's ViewModel**.
+* **View** *(UIViewController)* (Can be additionally split into UIView if needed). A **View** can have its **own ViewModel**.
 * **ViewModel** (Prefered Object instead of Struct) Provides data from **Model** that **View** can easily use.
 
 The view knows about the view model, and the view model knows about the model, but the model is unaware of the view model, and the view model is unaware of the view.
