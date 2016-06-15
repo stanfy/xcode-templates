@@ -12,7 +12,7 @@ import UIKit
 
 class ___VARIABLE_viewController:identifier___: UIViewController {
     let viewModel: ___VARIABLE_viewModel:identifier___
-    
+
     init(viewModel: ___VARIABLE_viewModel:identifier___) {
         self.viewModel = viewModel
         super.init(nibName: "___VARIABLE_viewController:identifier___", bundle: nil)
@@ -37,7 +37,8 @@ class ___VARIABLE_viewController:identifier___: UIViewController {
 // MARK:- Factory
 
 class ___VARIABLE_viewControllerFactory:identifier___ {
-    static func default___VARIABLE_viewController:identifier___() -> ___VARIABLE_viewController:identifier___ {
-        return ___VARIABLE_viewController:identifier___(viewModel: ___VARIABLE_viewModelFactory:identifier___.default___VARIABLE_viewModel:identifier___())
+    static func newViewController() -> ___VARIABLE_viewController:identifier___ {
+        return ___VARIABLE_viewController:identifier___(viewModel: ___VARIABLE_viewModelFactory:identifier___.defaultViewModel())
     }
 }
+
